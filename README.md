@@ -3,6 +3,7 @@
 The included iPython notebook describes four different CharRNN implementation flavours for the Lasagne framework. The implementations differ in training and sampling procedures, but always use the same neural network architecture and the same learning objective.
 
 For this particular CharRNN I used the following very simple network layout:
+
 	* InputLayer (65 input dimensions)
 	* LSTMLayer  (50 hidden dimensions)
 	* DenseLayer (65 output dimensions)
