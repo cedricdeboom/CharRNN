@@ -8,5 +8,5 @@ For this particular CharRNN I used the following very simple network layout:
 	* LSTMLayer  (50 hidden dimensions)
 	* DenseLayer (65 output dimensions)
   
-The network is deliberately chosen to be very simple, as I wanted to illustrate the different implemtation flavours and I did not want to complicate the discussion by using a complicated/deeper network layout.
+The network is deliberately chosen to be very simple, as I wanted to illustrate the different implementation flavours and I did not want to complicate the discussion by using a deeper network layout.
 Of course all examples in the notebook can be extended to deeper layouts.
