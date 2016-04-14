@@ -10,3 +10,10 @@ For this particular CharRNN I used the following very simple network layout:
   
 The network is deliberately chosen to be very simple, as I wanted to illustrate the different implementation flavours and I did not want to complicate the discussion by using a deeper network layout.
 Of course all examples in the notebook can be extended to deeper layouts.
+
+## Web demo
+
+Launch the demo.py script in the demo directory. When the web server launches (after the theano functions are compiled), fire up a web browser and go to
+```
+http://localhost:5000/home
+```
