@@ -1,0 +1,31 @@
+body {
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+#hdr {
+  text-align: center;
+}
+
+#lead {
+  text-align: left;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+/* ------- */
+
+.hidden {
+	display: none;
+}
+
+#code {
+  font-size: 14pt;
+}

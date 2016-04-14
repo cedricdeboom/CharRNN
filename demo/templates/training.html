@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CharRNN Demonstration - Shakespeare</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<script type=text/javascript>
+$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+g = function() {
+      $.getJSON($SCRIPT_ROOT + '/sample', {}, function(data) {
+        $("#sample").html(data.result.replace(/(?:\r\n|\r|\n)/g, '<br />'));
+      });
+    };
+setInterval(g, 2000);
+</script>
+      
+<div class="container">
+      <div class="central-header">
+        <h1 id="hdr">Look, I am learning to write like Shakespeare!</h1>
+        <br/>
+        <p class="lead" id="sample"></p>
+      </div>
+</div><!-- /.container -->
+
+<br/><br/><br/>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright 2016 - Cedric De Boom, all rights reserved.</p>
+      </div>
+</footer>
+
+
+</body>
+</html>
