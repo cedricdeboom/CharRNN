@@ -9,3 +9,5 @@
 *.key
 
 experiments/.idea/*
+
+/paper/
